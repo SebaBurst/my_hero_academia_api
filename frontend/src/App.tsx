@@ -1,13 +1,16 @@
 
 import './App.css'
+import Banner from './components/Banner'
+import GetCharacter from './components/GetCharacter'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <>
-      <div>
-        <img src="https://i.imgur.com/ZjB6HsX.png" />
-        </div>
+      <Banner />
+      <Hero />
+      <GetCharacter />
     </>
   )
 }

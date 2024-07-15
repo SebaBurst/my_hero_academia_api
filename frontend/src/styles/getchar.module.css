@@ -1,0 +1,129 @@
+.getchar_bg {
+    background-image: url('../assets/bgpattern.png');
+    background-position: center;
+    background-repeat: repeat;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--yellow_mha);
+
+}
+
+
+.query_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 20px;
+    border: 5px solid #000;
+    position: relative;
+    text-align: center;
+}
+
+.box_text{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: background-color .3s ease-in-out;
+}
+
+.box_text p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #000;
+    margin: 0;
+    padding: 10px;
+}
+
+.box_hero::after {
+    content: "";
+    background-color: #000;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box_hero_button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 20px;
+    border: 5px solid #000;
+    position: relative;
+    text-align: center;
+}
+
+.box_text_button{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    color: #000;
+    transition: background-color .3s ease-in-out;
+}
+
+.box_text_button:hover{
+    background-color: #000;
+    color: white;
+}
+
+.box_text_button p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 10px;
+}
+
+.box_hero_button::after {
+    content: "";
+    background-color: #000;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
