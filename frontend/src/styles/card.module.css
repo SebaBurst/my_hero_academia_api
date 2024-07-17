@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.card {
+    display: flex;
+    border: 5px solid #000;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 65%;
+    position: relative;
+}
+
+.card_container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    background-image: url('../assets/bgpattern.png');
+    background-position: center;
+    background-repeat: repeat;
+    align-items: center;
+    border: 5px solid white;
+
+    justify-content: center;
+    transition: transform .3s ease-in-out;
+    background-color: #48aa9e;
+}
+
+.character_title {
+    font-family: 'MyHeroFont', sans-serif;
+    font-size: 30px;
+    /* Ajusta el tamaño según sea necesario */
+    font-weight: bold;
+    margin-left: 10px;
+    color: #FFD700;
+    /* Color amarillo */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000,
+        -4px -4px 0 #000,
+        4px -4px 0 #000,
+        -4px 4px 0 #000,
+        4px 4px 0 #000,
+        -5px -5px 0 #000,
+        5px -5px 0 #000,
+        -5px 5px 0 #000,
+        5px 5px 0 #000;
+    z-index: 1001;
+    mix-blend-mode: normal;
+
+    /* Borde negro más grueso */
+}
+
+
+.card_content {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    border: 2px solid #000;
+
+}
+
+.vertical_name {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 4rem;
+    font-family: 'MyHeroFont', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.card_image_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card_details {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero_name {
+    font-family: 'MyHeroFont', sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.quirk_name {
+    font-size: 18px;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+.birthday,
+.description,
+.quirk_description {
+    font-size: 16px;
+    color: #000;
+    margin: 5px 0;
+}
+
+.birthday {
+    margin-top: 20px;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_info a {
+    font-family: roboto;
+    font-size: 16px;
+}
+
+.card_info p {
+    font-family: roboto;
+    font-size: 16px;
+}
+
+
+.card_info {
+    border: 2px solid #000;
+    position: relative;
+    width: 100%;
+    height: 290px;
+    background-color: #48aa9e;
+    background-position: center;
+    background-repeat: repeat;
+    background-image: url('../assets/bgpattern.png');
+    z-index: 1;
+
+}
+
+
+.card_bg_art {
+    mix-blend-mode: luminosity;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 290px;
+    z-index: 0;
+}
+.card_content_info {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 290px;
+    color: white;
+    background-position: center;
+    background-repeat: repeat;
+    background-image: url('../assets/bgpattern.png');
+    background-color: #48aa9e;
+    mix-blend-mode: hard-light;
+
+}
+
+.card_content_info_text {
+    position: relative;
+    font-family: roboto;
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+    z-index: 1000;
+    mix-blend-mode: normal;
+}
+
+
+.hero_name_white {
+    color: #ffffffbd;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+}
+
+
+.card_text {
+    position: absolute;
+    z-index: 20000;
+    height: 300px;
+    padding: 23px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.card_json{
+    padding: 10px;
+    margin-top: 10px;
+
+    max-height: 230px;
+    /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+    /* Añade scroll vertical si el contenido supera la altura máxima */
+    /* Espacio alrededor del contenido */
+    border-radius: 20px;
+    text-align: start;
+    width: 96%;
+    margin-left: 2%;
+    display: flex;
+    height: 230px;
+    color: #fff;
+}
+
+.card_json_content{
+    max-height: 210px;
+    /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto;
+    /* Añade scroll vertical si el contenido supera la altura máxima */
+    padding: 15px;
+    /* Espacio alrededor del contenido */
+    border-radius: 20px;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    height: 210px;
+}
