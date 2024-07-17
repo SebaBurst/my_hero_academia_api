@@ -14,7 +14,7 @@ interface CharactersProp {
 }
 
 function Card(props: CharactersProp) {
-    const { name, surname, artwork, quirk, birthday, description, quirk_description, character } = props;
+    const { name, surname, artwork, quirk, birthday, description, character } = props;
     return (
         <div className={styles.card}>
             <div className={styles.card_container}>
