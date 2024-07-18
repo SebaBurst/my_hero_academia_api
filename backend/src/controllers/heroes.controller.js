@@ -70,7 +70,7 @@ export const getHero = async (req, res) => {
                 LOWER(h.hero_name) = $1 OR LOWER(c.name) = $1 OR LOWER(c.surname) = $1
         `, [hero_name]); // get the hero from the database
 
-        res.json(result.rows); // send the hero
+        res.json(result.rows[0]); // send the hero
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

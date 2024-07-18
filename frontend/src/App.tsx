@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './components/Banner'
 import GetCharacter from './components/GetCharacter'
+import GetHeroes from './components/GetHeroes'
 import Hero from './components/Hero'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <Hero />
       <GetCharacter />
+      <GetHeroes />
     </>
   )
 }

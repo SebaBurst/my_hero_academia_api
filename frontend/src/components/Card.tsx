@@ -2,6 +2,9 @@ import styles from '../styles/card.module.css';
 import JsonView from 'react18-json-view';
 import 'react18-json-view/src/style.css';
 
+
+
+
 interface CharactersProp {
     name: string;
     surname: string;
@@ -15,6 +18,8 @@ interface CharactersProp {
 
 function Card(props: CharactersProp) {
     const { name, surname, artwork, quirk, birthday, description, character } = props;
+
+
     return (
         <div className={styles.card}>
             <div className={styles.card_container}>
