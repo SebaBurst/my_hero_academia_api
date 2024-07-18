@@ -1,6 +1,6 @@
 import styles from '../styles/getchar.module.css'
 import { useState, useEffect } from 'react'
-import Card from './Card';
+import Card from './CardHero';
 
 interface heroe {
     name: string;
@@ -66,7 +66,7 @@ function GetHeroes() {
                             <p style={{ color: '#ffffff' }}><span style={{ color: 'green', fontWeight: 'bold' }}>[GET]</span> https://myheroacademia-api.vercel.app/api/heroes/
                             </p>
 
-                            <input type="text" placeholder="name or surname or id" className={styles.search_input} onChange={getInputChange} value={queryChange} />
+                            <input type="text" placeholder="hero name" className={styles.search_input} onChange={getInputChange} value={queryChange} />
                         </section>
 
                     </div>
@@ -80,7 +80,16 @@ function GetHeroes() {
                 </div>
             </section>
 
-            <p>{character.hero_name}</p>
+            <Card
+                name={character.name}
+                surname={character.surname}
+                quirk={character.quirk}
+                hero_name={character.hero_name}
+                hero_type={character.hero_type}
+                hero_description={character.hero_description}
+                hero_artwork={character.hero_artwork}
+                hero={character}
+            />
 
         </div>
     )

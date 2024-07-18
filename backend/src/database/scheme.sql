@@ -32,6 +32,9 @@ INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_a
 INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_artwork, is_ProHero) VALUES 
 (2, 'Dynamight', ' ', ' Great Explosion Murder God Dynamight is a student in Class 2-A at U.A. High School, training to become a Pro Hero. His quirk is the ability to explode by releasing nitro-like sweat from the sweat glands in his palms.', 'https://i.imgur.com/JJW3hNC.png', FALSE)
 
+INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_artwork, is_ProHero) VALUES 
+(3, 'Uravity', ' ', 'Uravity is a student in Class 2-A , His quirk is the ability to put anything he touches into a state of zero gravity with the pads on his fingertips, she can use Gunhead martial arts, and use combine moves with Froppy','https://i.imgur.com/22c0Go6.png' ,FALSE)
+
 
 CREATE TABLE heroes (
     id SERIAL PRIMARY KEY,
