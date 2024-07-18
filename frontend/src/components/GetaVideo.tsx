@@ -1,7 +1,7 @@
 import Plyr from 'plyr-react';
 import 'plyr/dist/plyr.css';
 import styles from '../styles/video.module.css';
-import { useState, useEffect } from 'react'
+import {  useEffect } from 'react'
 
 
 function GetaVideo() {
@@ -49,6 +49,7 @@ function GetaVideo() {
         </div>
       </section>
             <div className={styles.video_container}>
+              {name}
                 <Plyr
                     source={{
                         type: "video",
