@@ -1,7 +1,7 @@
 import Plyr from 'plyr-react';
 import 'plyr/dist/plyr.css';
 import styles from '../styles/video.module.css';
-import {  useEffect } from 'react'
+import {  useState } from 'react'
 
 
 function GetaVideo() {
