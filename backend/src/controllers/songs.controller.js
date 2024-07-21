@@ -36,7 +36,7 @@ export const getSongs = async (req, res) => {
 export const getSong = async (req, res) => {
 
     try {
-        const param = req.params.param.toLowerCase();
+        const param = req.params.song_name.toLowerCase();
         let song;
         song = await pool.query(
             'SELECT * FROM songs WHERE LOWER(song_name) = $1 OR LOWER(song_artist) = $1 OR LOWER(id_song_video) = $1', 

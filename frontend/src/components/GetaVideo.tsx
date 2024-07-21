@@ -1,12 +1,28 @@
 import Plyr from 'plyr-react';
 import 'plyr/dist/plyr.css';
 import styles from '../styles/video.module.css';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import JsonView from 'react18-json-view';
+
+
+interface song {
+  song_name: string;
+  song_artist: string;
+  song_artwork: string;
+  id_song_video: string;
+  song_video: string;
+  is_opening: boolean;
+  is_ending: boolean;
+
+
+}
+
 
 
 function GetaVideo() {
   const [name, setName] = useState('curtain_call');
   const [queryChange, setQueryChange] = useState('curtain_call');
+  const [video, setVideo] = useState({} as song)
 
   const videourl = 'https://www.dropbox.com/scl/fi/ch12oohym5zp1wtf11c5w/opening13.mp4?rlkey=qp9dt46o98tritoab80jiono7&st=tu4hpirm&dl=1'
 
@@ -15,9 +31,20 @@ function GetaVideo() {
   }
 
 
+  function fetchVideo(videoName: string) {
+    fetch(`https://myheroacademia-api.vercel.app/api/songs/${videoName}`)
+      .then(resp => resp.json())
+      .then(data => setVideo(data));
+  }
+
   function handleSubmit() {
     setName(queryChange);
   }
+
+
+  useEffect(() => {
+    fetchVideo(name);
+  }, [name]);
 
   return (
     <div className={styles.video_bg}>
@@ -56,6 +83,8 @@ function GetaVideo() {
           <div className={styles.box_text}>
             <p>{name}
             </p>
+
+            <JsonView src={video} />
           </div>
         </div>
         <div className={styles.video_container}>
@@ -63,7 +92,7 @@ function GetaVideo() {
             <Plyr
               source={{
                 type: "video",
-                sources: [{ src: videourl, provider: "html5" }],
+                sources: [{ src: video.song_video, provider: "html5" }],
               }}
             />
           </div>
