@@ -1,27 +1,27 @@
 import Plyr from 'plyr-react';
 import 'plyr/dist/plyr.css';
 import styles from '../styles/video.module.css';
-import {  useState } from 'react'
+import { useState } from 'react'
 
 
 function GetaVideo() {
-    const [name, setName] = useState('curtain_call');
-    const [queryChange, setQueryChange] = useState('curtain_call');
-  
-    const videourl = 'https://www.dropbox.com/scl/fi/ch12oohym5zp1wtf11c5w/opening13.mp4?rlkey=qp9dt46o98tritoab80jiono7&st=tu4hpirm&dl=1'
+  const [name, setName] = useState('curtain_call');
+  const [queryChange, setQueryChange] = useState('curtain_call');
 
-    function getInputChange(e: any) {
-        setQueryChange(e.target.value);
-    }
-    
-    
-    function handleSubmit() {
-      setName(queryChange);
-    }
-    
-    return (
-        <div className={styles.video_bg}>
-            <section className={styles.query_container}>
+  const videourl = 'https://www.dropbox.com/scl/fi/ch12oohym5zp1wtf11c5w/opening13.mp4?rlkey=qp9dt46o98tritoab80jiono7&st=tu4hpirm&dl=1'
+
+  function getInputChange(e: any) {
+    setQueryChange(e.target.value);
+  }
+
+
+  function handleSubmit() {
+    setName(queryChange);
+  }
+
+  return (
+    <div className={styles.video_bg}>
+      <section className={styles.query_container}>
         <div className={styles.box_hero}>
           <div className={styles.box_text}>
             <p>GET A OPENING OR ENDING
@@ -37,7 +37,7 @@ function GetaVideo() {
 
               <input type="text" placeholder="name or surname or id" className={styles.search_input} onChange={getInputChange} value={queryChange} />
             </section>
-         
+
           </div>
         </div>
 
@@ -48,17 +48,31 @@ function GetaVideo() {
           </div>
         </div>
       </section>
-            <div className={styles.video_container}>
-              {name}
-                <Plyr
-                    source={{
-                        type: "video",
-                        sources: [{ src: videourl, provider: "html5" }],
-                    }}
-                />
-            </div>
+      
+
+
+      <div className={styles.video_container_json}>
+        <div className={styles.box_hero}>
+          <div className={styles.box_text}>
+            <p>{name}
+            </p>
+          </div>
         </div>
-    )
+        <div className={styles.video_container}>
+          <div className={styles.video_content}>
+            <Plyr
+              source={{
+                type: "video",
+                sources: [{ src: videourl, provider: "html5" }],
+              }}
+            />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  )
 }
 
 export default GetaVideo

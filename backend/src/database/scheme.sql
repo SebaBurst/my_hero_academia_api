@@ -58,11 +58,17 @@ CREATE TABLE villains (
 
 CREATE TABLE songs (
     id SERIAL PRIMARY KEY,
-    song_name VARCHAR(255) NOT NULL,
-    song_artist VARCHAR(255) NOT NULL,
-    song_artwork VARCHAR(255) NOT NULL,
-    song_url VARCHAR(255) NOT NULL,
-    song_video VARCHAR(255) NOT NULL,
+    song_name TEXT NOT NULL,
+    song_artist TEXT NOT NULL,
+    song_artwork TEXT NOT NULL,
+    id_song_video TEXT NOT NULL,
+    song_video TEXT NOT NULL,
     is_opening BOOLEAN NOT NULL,
     is_ending BOOLEAN NOT NULL
 )
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Curtain_Call', 'Yuuri',
+ 'https://i.imgur.com/YJPsq0k.png', 'OP13', 'https://www.dropbox.com/scl/fi/ch12oohym5zp1wtf11c5w/opening13.mp4?rlkey=qp9dt46o98tritoab80jiono7&st=tu4hpirm&dl=1', TRUE, FALSE)
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Bokurano', 'Eve',
+ 'https://i.imgur.com/a2zvj35.jpeg', 'OP11', 'https://www.dropbox.com/scl/fi/sokik562nrojntwrrpw6n/opening11.mp4?rlkey=g6td20o7o6kakvlwz6naicm5c&st=xa4lhu9w&dl=1', TRUE, FALSE)

@@ -241,6 +241,8 @@
     display: flex;
     height: 230px;
     color: #fff;
+    scrollbar-color: #d55d2e #f4f4f4;
+    cursor: pointer;
 }
 
 .card_json_content{
