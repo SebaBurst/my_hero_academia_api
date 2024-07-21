@@ -24,8 +24,6 @@ function GetaVideo() {
   const [queryChange, setQueryChange] = useState('curtain_call');
   const [video, setVideo] = useState({} as song)
 
-  const videourl = 'https://www.dropbox.com/scl/fi/ch12oohym5zp1wtf11c5w/opening13.mp4?rlkey=qp9dt46o98tritoab80jiono7&st=tu4hpirm&dl=1'
-
   function getInputChange(e: any) {
     setQueryChange(e.target.value);
   }
