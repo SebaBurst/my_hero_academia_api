@@ -86,7 +86,7 @@ function GetHeroes() {
                 quirk={character.quirk}
                 hero_name={character.hero_name}
                 hero_type={character.hero_type}
-                hero_description={character.hero_description}
+                quirk_description={character.quirk_description}
                 hero_artwork={character.hero_artwork}
                 hero={character}
             />

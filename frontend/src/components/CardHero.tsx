@@ -9,15 +9,15 @@ interface CharactersProp {
     quirk: string;
     hero_name: string;
     hero_type: string;
-    hero_description: string;
     hero_artwork: string;
     hero: any;
+    quirk_description: string;
 
 }
 
 
 function CardHero(props: CharactersProp) {
-  const { name, surname, quirk, hero_name, hero_type, hero_description, hero_artwork, hero } = props;
+  const { name, surname, quirk, hero_name, hero_type, hero_artwork, hero, quirk_description } = props;
   return (
     <div className={styles.card}>
         <div className={styles.card_container}>
@@ -45,7 +45,7 @@ function CardHero(props: CharactersProp) {
 
                 <a className={styles.character_title} style={{ fontSize: '55px' }}>{hero_type} {hero_name}</a>
                 <a className={styles.hero_name_white} style={{ fontSize: '25px' }}>Quirk: <span className={styles.character_title}>{quirk}</span></a>
-                <a style={{ fontSize: '18px', color: 'white', fontFamily: 'Roboto', marginTop: '15px' }}>{hero_description}</a>
+                <a style={{ fontSize: '18px', color: 'white', fontFamily: 'Roboto', marginTop: '15px' }}>{quirk_description}</a>
 
             </div>
             <div className={styles.card_json}>

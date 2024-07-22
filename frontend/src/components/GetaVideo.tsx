@@ -73,16 +73,18 @@ function GetaVideo() {
           </div>
         </div>
       </section>
-      
+
 
 
       <div className={styles.video_container_json}>
-        <div className={styles.box_hero}>
-          <div className={styles.box_text}>
-            <p>{name}
-            </p>
+        <div className={styles.box_hero} style={{ width: '400px', height: '450px' }}>
+          <div className={styles.box_text} style={{ width: '100%', height: '450px' }}>
+            <div className={styles.video_content_json} >
+              <p>{video.song_name} by {video.song_artist}
+              </p>
+              <JsonView src={video} />
+            </div>
 
-            <JsonView src={video} />
           </div>
         </div>
         <div className={styles.video_container}>
