@@ -2,9 +2,9 @@
 import './App.css'
 import Banner from './components/Banner'
 import GetaVideo from './components/GetaVideo'
-import GetCharacter from './components/GetCharacter'
-import GetHeroes from './components/GetHeroes'
 import Hero from './components/Hero'
+import QueryCharacters from './components/QueryCharacters'
+import QueryHero from './components/QueryHero'
 
 function App() {
 
@@ -12,8 +12,8 @@ function App() {
     <>
       <Banner />
       <Hero />
-      <GetCharacter />
-      <GetHeroes />
+      <QueryCharacters />
+      <QueryHero />
       <GetaVideo />
     </>
   )

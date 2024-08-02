@@ -98,6 +98,11 @@
 .card_image {
     max-width: 100%;
     max-height: 100%;
+    transition: transform 0.6s;
+}
+
+.card_image:hover {
+    transform: scale(1.1);
 }
 
 .card_details {
@@ -179,6 +184,7 @@
     height: 290px;
     z-index: 0;
 }
+
 .card_content_info {
     position: relative;
     z-index: 1;
@@ -209,7 +215,7 @@
     font-size: 40px;
     font-weight: 100;
     text-transform: uppercase;
-    
+
 }
 
 
@@ -225,7 +231,7 @@
     margin-top: -15%;
 }
 
-.card_json{
+.card_json {
     padding: 10px;
     margin-top: 10px;
 
@@ -245,7 +251,7 @@
     cursor: pointer;
 }
 
-.card_json_content{
+.card_json_content {
     max-height: 210px;
     /* Ajusta la altura máxima según tus necesidades */
     /* Añade scroll vertical si el contenido supera la altura máxima */
@@ -257,3 +263,99 @@
     display: flex;
     height: 210px;
 }
+
+
+
+.singleherobg {
+    border: 2px solid #000;
+    background-image: url('../assets/bgpattern.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-color: #f78030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.singleherobg img {
+    transition: transform .6s ease-in-out;
+}
+
+.singleherobg img:hover {
+    transform: scale(1.5);
+}
+
+.singleherobg_white {
+    display: flex;
+    width: 270px;
+    height: 470px;
+    background-color: white;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.singleherobg_principal {
+    display: flex;
+    width: 270px;
+    height: 470px;
+    background-color: white;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #000;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+.singleherobg_principal:hover {
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+
+    width: 40px;
+    height: 40px;
+    font-weight: 800;
+    font-size: 12px;
+    margin: 0 10px;
+    border: 3px solid #000000;
+    border-radius: 6px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+    cursor: pointer;
+    background-color: var(--yellow_mha);;
+    color: #1d1d1d;
+    border: 3px solid #1d1d1d;
+    transition: all 0.3s ease;
+}
+
+.pagination button.active {
+    background-color: var(--yellow_mha);;
+    color: #1d1d1d;
+    border: 3px solid #1d1d1d;
+}
+
+
+
+
+      

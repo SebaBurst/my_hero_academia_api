@@ -16,6 +16,25 @@
 
 
 
+.hero_bg_tabs {
+
+    background-image: url('../assets/bgpattern.png');
+    background-position: center;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(1, 132, 188);
+
+
+}
+
+
+
+
 .hero_content_left {
     display: flex;
     width: 60%;
@@ -53,7 +72,7 @@
 }
 
 .box_hero {
-    width:80%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +82,7 @@
     text-align: center;
 }
 
-.box_text{
+.box_text {
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,3 +114,5 @@
     left: 0;
     z-index: 0;
 }
+
+
