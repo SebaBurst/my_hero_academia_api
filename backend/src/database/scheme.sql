@@ -144,6 +144,16 @@ INSERT INTO character (name, surname, birthdate, artwork, description, quirk, qu
 
 
 
+INSERT INTO character (name, surname, birthdate, artwork, description, quirk, quirk_description) VALUES ('Rumi', 'Usagiyama', 'April 4', 'https://i.imgur.com/6kyYy5J.png',
+'He is a pro hero known as "Mirko." She is the No. 5 hero in the world and is known for her speed and agility. Her "quirk" is "Rabbit," which gives her the abilities of a rabbit, including superhuman strength, speed, and agility.',
+'Rabbit', 'Rumi has the abilities of a rabbit, including superhuman strength, speed, and agility. She can use her quirk to leap great distances, dodge attacks, and deliver powerful kicks. She can also use her quirk to communicate with animals and give them commands.');
+
+INSERT INTO character (name, surname, birthdate, artwork, description, quirk, quirk_description) VALUES ('Taishiro', 'Toyomitsu', 'May 29', 'https://i.imgur.com/XD18wN2.png',
+'He is a pro hero known as "Fat Gum." He is known for his large size and superhuman strength. His "quirk" is "Fat Absorption," which allows him to absorb the impact of attacks and store the energy in his body.',
+'Fat Absorption', 'Taishiro can absorb the impact of attacks and store the energy in his body. He can use his stored energy to increase his physical strength and durability, and can also use it to power his own attacks. He can also use his quirk to protect his allies and shield them from harm.');
+
+
+
 
 
 CREATE TABLE heroes (
@@ -251,7 +261,11 @@ INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_a
 INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_artwork, is_ProHero) VALUES 
 (29, 'Hawks', 'Wing Hero', 'Hawks is a pro hero known as "Hawks." He is the No. 2 hero in the world and is known for his speed and agility. His quirk is the ability to generate and control feathers.', 'https://i.imgur.com/CuJguww.png', TRUE);
 
+INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_artwork, is_ProHero) VALUES 
+(30, 'Mirko', 'Rabbit Hero', 'Mirko is a pro hero known as "Mirko." She is the No. 5 hero in the world and is known for her speed and agility. Her quirk is the ability to use the abilities of a rabbit, including superhuman strength, speed, and agility.', 'https://i.imgur.com/11Ph0AO.png', TRUE);
 
+INSERT INTO heroes (character_id, hero_name, hero_type, hero_description, hero_artwork, is_ProHero) VALUES 
+(31, 'Fat Gum', 'IMC Hero', 'Fat Gum is a pro hero known as "Fat Gum." He is known for his large size and superhuman strength. His quirk is the ability to absorb the impact of attacks and store the energy in his body.', 'https://i.imgur.com/9hSQ9mx.png', TRUE);
 
 
 
@@ -291,4 +305,20 @@ INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_vid
 
 INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Merry-Go-Round', 'MAN_WITH_A_MISSION',
     'https://i.imgur.com/HDjHerU.jpeg', 'OP9', 'https://www.dropbox.com/scl/fi/48t8p1nyvgmvq6i97fgay/OP9.mp4?rlkey=c7kfijyin50c49k0dveniscis&st=fh4y1f2v&dl=1', TRUE, FALSE);
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('No.1', 'Dish',
+    'https://i.imgur.com/TfRkNtO.png', 'OP8', 'https://www.dropbox.com/scl/fi/toyudg92o20bdpxejtys5/OP8.mp4?rlkey=zls3qglh4111nxe1rn9f7nwu2&st=8utm9t1m&dl=1', TRUE, FALSE);
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Starmarker', 'KANA-BOON',
+    'https://i.imgur.com/Ccjd1eB.png', 'OP7', 'https://www.dropbox.com/scl/fi/38hyx3mt3n99hvrhgrwmi/OP7.mp4?rlkey=gi17nsa0hi3pr18l7816uzuzn&st=tb076b1w&dl=1', TRUE, FALSE);
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Polaris', 'BLUE_ENCOUNT',
+    'https://i.imgur.com/qGAYAv9.png', 'OP6', 'https://www.dropbox.com/scl/fi/5fdr824w7hvkdzdqs3gn4/OP6.mp4?rlkey=dpb4vn37hxds4qd2hddap76ju&st=27lg2wh9&dl=1', TRUE, FALSE);
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Make_My_Story', 'Lenny_Code_Fiction',
+    'https://i.imgur.com/OFds7Fi.png', 'OP5', 'https://www.dropbox.com/scl/fi/w111nos88f2mih0swqupk/OP5.mp4?rlkey=x9s95j9ds2kbvk9rq9a0bxhze&st=9vui1jxn&dl=1', TRUE, FALSE);
+
+INSERT INTO songs (song_name, song_artist, song_artwork, id_song_video, song_video, is_opening, is_ending) VALUES ('Odd_Future', 'UVERworld',
+    'https://i.imgur.com/1Z2Z2Zv.jpeg', 'OP4', 'https://www.dropbox.com/scl/fi/1z1z1', TRUE, FALSE);
+
 

@@ -32,6 +32,21 @@
 
 }
 
+.hero_content{
+    display: flex;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    background-color: #005cc5;
+    background-image: url('../assets/bgpattern.png');
+    background-position: center;
+    background-repeat: repeat;
+}
+
 
 
 
@@ -48,7 +63,7 @@
 }
 
 .hero_content_left img {
-    width: 45%;
+    width: 65%;
     object-fit: contain;
     user-select: none;
 }
@@ -96,7 +111,7 @@
 }
 
 .box_text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
     color: #000;
     text-transform: uppercase;

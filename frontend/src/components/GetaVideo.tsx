@@ -19,9 +19,9 @@ interface song {
 
 
 
-function GetaVideo() {
-  const [name, setName] = useState('curtain_call');
-  const [queryChange, setQueryChange] = useState('curtain_call');
+function GetaVideo({query}: any) {
+  const [name, setName] = useState(query);
+  const [queryChange, setQueryChange] = useState(query);
   const [video, setVideo] = useState({} as song)
 
   function getInputChange(e: any) {

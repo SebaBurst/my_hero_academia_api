@@ -1,10 +1,11 @@
 
 import './App.css'
 import Banner from './components/Banner'
-import GetaVideo from './components/GetaVideo'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import QueryCharacters from './components/QueryCharacters'
 import QueryHero from './components/QueryHero'
+import QueryVideos from './components/QueryVideos'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
       <Hero />
       <QueryCharacters />
       <QueryHero />
-      <GetaVideo />
+      <QueryVideos />
+      <Footer />
     </>
   )
 }

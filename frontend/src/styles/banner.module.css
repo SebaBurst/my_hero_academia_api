@@ -6,3 +6,41 @@
     background-position: center;
     background-repeat:repeat;
 }
+
+
+.footer_container{
+    width: 100%;
+    height: 13vh;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_logo{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.footer_logo img{
+    height: 70px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20px;
+    color: white;
+    width: 90%;
+    border-top: 4px solid white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    cursor: pointer;
+}
