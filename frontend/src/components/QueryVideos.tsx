@@ -2,7 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import styles from '../styles/video.module.css';
 import GetaVideo from './GetaVideo';
 import GetAllVideos from './GetAllVideos';
-import { useState, useEffect, SetStateAction } from 'react'
+import { useState } from 'react'
 
 
 
